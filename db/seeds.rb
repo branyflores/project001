@@ -7,27 +7,27 @@ puts "#{ User.count } users"
 
 Starsign.destroy_all
 
-s1 = Starsign.create :title => 'Aries'
-s2 = Starsign.creste :title => 'Taurus'
-s3 = Starsign.create :title => 'Gemini'
-s4 = Starsign.create :title => 'Cancer'
-s5 = Starsign.create :title => 'Leo'
-s6 = Starsign.create :title => 'Virgo'
-s7 = Starsign.create :title => 'Libra'
-s8 = Starsign.create :title => 'Scorpio'
-s9 = Starsign.create :title => 'Sagittarius'
-s10 = Starsign.create :title => 'Capricorn'
-s11 = Starsign.create :title => 'Aquarius'
-s12 = Starsign.create :title => 'Pisces'
+s1 = Starsign.create :name => 'Aries'
+s2 = Starsign.create :name => 'Taurus'
+s3 = Starsign.create :name => 'Gemini'
+s4 = Starsign.create :name => 'Cancer'
+s5 = Starsign.create :name => 'Leo'
+s6 = Starsign.create :name => 'Virgo'
+s7 = Starsign.create :name => 'Libra'
+s8 = Starsign.create :name => 'Scorpio'
+s9 = Starsign.create :name => 'Sagittarius'
+s10 = Starsign.create :name => 'Capricorn'
+s11 = Starsign.create :name => 'Aquarius'
+s12 = Starsign.create :name => 'Pisces'
 puts "#{ Starsign.count } starsigns"
 
 
 Element.destroy_all
 
-e1 = Element.create :title => 'Fire'
-e2 = Element.create :title => 'Air'
-e3 = Element.create :title => 'Earth'
-e4 = Element.create :title => 'Water'
+e1 = Element.create :name => 'Fire'
+e2 = Element.create :name => 'Air'
+e3 = Element.create :name => 'Earth'
+e4 = Element.create :name => 'Water'
 puts "#{ Element.count } Elements"
 
 
