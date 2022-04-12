@@ -1,6 +1,6 @@
 User.destroy_all
-u1 = User.create :email => 'branygil.valle@outlook.com'
-u2 = User.create :email => 'brany.new@gmail.com'
+u1 = User.create :email => 'branygil.valle@outlook.com', :password => 'lility'
+u2 = User.create :email => 'brany.new@gmail.com', :password => 'lility'
 puts "#{ User.count } users"
 
 
@@ -32,3 +32,45 @@ puts "#{ Element.count } Elements"
 
 
 #associations
+
+
+puts "Elements and Starsigns"
+
+e1.starsigns << s5 << s9 << s1
+e2.starsigns << s3 << s7 << s11
+e3.starsigns << s2 << s6 << s10
+e4.starsigns << s4 << s8 << s12
+
+
+puts "Users and Starsigns"
+
+s1.users << u1
+s2.users << u2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

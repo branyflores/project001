@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_11_022159) do
+ActiveRecord::Schema.define(version: 2022_04_12_024617) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,11 @@ ActiveRecord::Schema.define(version: 2022_04_11_022159) do
     t.text "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "elements_starsigns", force: :cascade do |t|
+    t.integer "element_id"
+    t.integer "starsign_id"
   end
 
   create_table "starsigns", force: :cascade do |t|
@@ -33,6 +38,8 @@ ActiveRecord::Schema.define(version: 2022_04_11_022159) do
     t.text "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "starsign_id"
+    t.string "password_digest"
   end
 
 end
