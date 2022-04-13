@@ -2,6 +2,17 @@
 
 
 <% if @current_user.present? %>
- <h2>Welcome to your Zodiac platform <%= @current_user.email %>!</h2>
+ <h2>Welcome to your Zodiac platform <%= @current_user.name %>!</h2>
+
+
+
+
+
+<p><%= @current_user.starsign.name %></p>
+<p><%= @current_user.starsign.element.name %></p>
+
+
+
+  
 
  <% end %>

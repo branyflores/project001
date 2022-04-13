@@ -1,0 +1,2 @@
+module StarsignsHelper
+end

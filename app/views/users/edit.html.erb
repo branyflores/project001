@@ -1,0 +1,28 @@
+
+
+
+
+<%= form_for @user do |f| %>
+
+
+<%= f.label :image %>
+  <%= f.text_field :image %>
+
+ <%= f.label :name %>
+  <%= f.text_field :name %>
+
+<%= f.label :dob %>
+  <%= f.date_field :dob %>
+
+ 
+ 
+ <%= f.label :starsign_id %>
+  <%= f.select :starsign_id, Starsign.pluck(:name, :id) %>
+
+   
+  
+
+    <%= f.submit %>
+  <% end %>
+
+

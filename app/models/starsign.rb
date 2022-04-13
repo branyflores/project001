@@ -1,5 +1,5 @@
 class Starsign < ApplicationRecord
-    has_one :element
+    belongs_to :element, :optional => true
     
     has_many :users
 end

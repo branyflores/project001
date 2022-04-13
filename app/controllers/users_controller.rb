@@ -18,11 +18,25 @@ class UsersController < ApplicationController
 
  end
 
+ def edit
+
+   @user = @current_user
+   @element = Element.all
+ end 
+ 
+ def update
+ 
+  user = User.update user_params
+  redirect_to root_path
+
+end
+   
+
 
 private
  def user_params
 
-  params.require(:user).permit(:email, :password, :password_confirmation)
+  params.require(:user).permit(:email, :password, :password_confirmation, :dob, :name, :image, :starsign_id)
 
   end
 end
