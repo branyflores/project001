@@ -1,18 +1,131 @@
-<h1>Your Zodiac profile</h1>
 
+<div class="profile">
 
+<div id="container">
 <% if @current_user.present? %>
- <h2>Welcome to your Zodiac platform <%= @current_user.name %>!</h2>
+ <br><h2>Welcome to your Zodiac platform <%= @current_user.name %>!</h2>
+</div>
+    <% if @current_user.starsign.present? %>
 
-
-
-
-
-<p><%= @current_user.starsign.name %></p>
-<p><%= @current_user.starsign.element.name %></p>
-
-
-
+        <br><div class="image"><img src="<%= @current_user.image %>" alt="profile" height="300">
+        <br><h2>Star sign:
+        <br><p><%= @current_user.starsign.name %></p>
+        Element:
+        <br><p><%= @current_user.starsign.element.name %></p>
+        </h2>
+    <% end %>
+    </div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/pisces.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pisces</h5>
+        <p class="card-text">The cosmos encourages you to open your heart and mind to the possibilities that are being presented to you when it comes to love and romance.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/aquarius.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Aquarius</h5>
+        <p class="card-text">This cosmic climate can help you feel inspired by your own strength, so don't be afraid to pat yourself on the back for how far you've come thus far.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/capricorn.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Capricorn</h5>
+        <p class="card-text"> You never know when you might be introduced to that one special person you need in your life. Socialize in the evening with good friends.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/sagittarius.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sagittarius</h5>
+        <p class="card-text">You'll feel inspired to invest in your home and personal organization today, dear Archer, as Venus enters a supportive connection with Mercury and Uranus, activating your fourth and sixth houses.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/scorpio.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Scorpio</h5>
+        <p class="card-text">What was once a stumbling block is now a mere bump in the road and easily overcome. All indications are that you'll be successful at whatever you do now, so dare to dream big.</p>
+      </div>
+    </div>
+    </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/libra.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Libra</h5>
+        <p class="card-text">You may feel tempted to indulge in a bit of retail therapy this evening as the Scorpio moon faces off with Mercury and Uranus, alerting you to new deals or products that you feel you must have.
+        </p>
+        </div>
+        </div>
+      </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/virgo.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Virgo</h5>
+        <p class="card-text">Make it a point to lead with an open heart today, dear Virgo, as sweet Venus forms a supportive aspect to Mercury and Uranus, activating the sectors of your chart that govern love and spirituality.</p>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/leo.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Leo</h5>
+        <p class="card-text">You may come to the realization that other people's boundaries aren't necessarily a reflection of how someone feels about you, dear Lion, as sweet Venus forms a soft connection to Mercury and Uranus.</p>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/cancer.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cancer</h5>
+        <p class="card-text">You may find yourself making impromptu plans with your circle of friends, giving you a chance to let down your hair and have fun.</p>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/aries.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Aries</h5>
+        <p class="card-text">Frustrations could find you this afternoon, dear Ram, as the Scorpio moon faces off with Mercury and Uranus, creating a tense vibe. </p>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/taurus.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Taurus</h5>
+        <p class="card-text"> the vibe might get a little tense within your love life this evening as the Scorpio moon faces off with Mercury and Uranus, making it a good time to lay low.</p>
+      </div>
+    </div>
+    </div>
+      <div class="col">
+    <div class="card h-100">
+      <img src="https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/gemini.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Gemini</h5>
+        <p class="card-text">Though it's technically the weekend, your focus will turn toward professional goals today, as Venus shares a sweet connection to Mercury and Uranus..</p>
+      </div>
+    </div>
+    </div>
   
 
  <% end %>
+</div>

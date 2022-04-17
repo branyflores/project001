@@ -1,28 +1,32 @@
 
 
 
-
+ <div class="edit">
 <%= form_for @user do |f| %>
 
 
-<%= f.label :image %>
-  <%= f.text_field :image %>
+<div id="container">  
+  <%= f.label :image, :class => 'form-label' %>
+  <%= f.url_field :image, :class => 'form-control' %>
+ 
 
- <%= f.label :name %>
-  <%= f.text_field :name %>
 
-<%= f.label :dob %>
-  <%= f.date_field :dob %>
+ <%= f.label :name, :class => 'form-label' %>
+  <%= f.text_field :name, :class => 'form-control' %>
+
+<%= f.label :dob, :class => 'form-label' %>
+  <%= f.date_field :dob, :class => 'form-control' %>
 
  
  
- <%= f.label :starsign_id %>
-  <%= f.select :starsign_id, Starsign.pluck(:name, :id) %>
+ <br><%= f.label :starsign_id, :class => 'form-label' %>
+ <br> <%= f.select :starsign_id, Starsign.pluck(:name, :id), :class => 'form-control' %>
+</div>
 
    
   
 
-    <%= f.submit %>
+   <br> <%= f.submit "Submit", :class => 'btn btn-outline-primary' %>
   <% end %>
 
-
+</div>

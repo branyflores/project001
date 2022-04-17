@@ -1,4 +1,7 @@
-<h1>Sign up to create a Zodic Profile</h1>
+
+<div class="pfl">
+<br><h1>Sign up to create a Zodic Profile</h1>
+
 
 <% if @user.errors.any? %>
 <ol> 
@@ -12,19 +15,20 @@
 
 
 
-<%= form_for @user do |f| %>
+<br><%= form_for @user do |f| %>
 
 
-  <%= f.label :email %>
-  <%= f.email_field :email %>
+ <br><%= f.label :email, :class => 'form-label' %>
+  <%= f.email_field :email, :class => 'form-control' %>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+  <br><%= f.label :password, :class => 'form-label' %>
+  <%= f.password_field :password, :class => 'form-control' %>
 
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
+  <br><%= f.label :password_confirmation, :class => 'form-label' %>
+  <%= f.password_field :password_confirmation, :class => 'form-control'  %>
 
-    <%= f.submit "Sign up!" %>
+    <br><br><%= f.submit "Sign up!", :class => 'btn btn-outline-primary' %>
   <% end %>
 
+</div>
 
