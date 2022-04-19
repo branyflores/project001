@@ -5,21 +5,47 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.7.5
 
-* System dependencies
+* Ruby on Rails
 
-* Configuration
+* Database creation with Association access to objets
 
-* Database creation
+# project001 includes:
 
-* Database initialization
+# Login
 
-* How to run the test suite
+-Requieres the user create an account to use the Zodiac platform
 
-* Services (job queues, cache servers, search engines, etc.)
+#About
 
-* Deployment instructions
+The Project astro for sei-52 came with the idea to create a Zodiac plataform where people could be conected by matching star signs.
+For my view the crud app is perfect to make the profiles to match by using the db seed.
+I made this app because the astrology industry worth a lot of money, so if im lucky some rich people will reach me and by my app and my hiden idead that i havent applied to my app yet just to protec my business.
 
-* ...
-# project001
+
+# Features
+
+-cards with very honest horoscop, created by my spiritual self. 
+-create profile 
+-include a profile picture => hotlinking atm <=
+-email
+-password
+-star signe , and element of your star sign
+
+# tools to be implemented 
+
+-match the profiles
+-link profiles to the home page cards
+-implement cloudimary
+-implement private chat
+
+# bugs to fix
+
+sign out page shows an error sometimes... veru strange it doesnt show all times, only for new accounts. 
+
+
+
+
+
+
