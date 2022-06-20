@@ -1,49 +1,33 @@
-# README
+# Astro - Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+-------------------------
 
-Things you may want to cover:
+Project Description
+======================
+initially my idea for the Astro project would be to create a dating app, to connect people through their star signs, based on mine personal, also people's current interest in Astrology and how this industry has grown.
 
-* Ruby version 2.7.5
+- As this was my first project using a CRUD system, I found out throughout the creation of the project's fetured, that working with dates of birth and making them to match, would be a challenge far beyond my knowledge in Ruby language.
+Therefore, I followed the instructions of my advisors, who guided me to create an initial platform where users can register and create a profile with Name, Photo and a start sign that contains also an element.
 
-* Ruby on Rails
+======================
 
-* Database creation with Association access to objets
+### Tech Stack
+- Ruby on Rails
+- PostgreSQL
+- Bootstrap
+ 
+=====================
 
- project001 includes:
- -----------------------------------------
+## Basic fetures 
 
-# Login
+- Create profile
+- Login
+- Logout
+- Access to your Horoscope Card baes on your Star Sign
 
--Requieres the user to create an account to log in the Zodiac platform
+======================
 
-3 About
-
-The Project astro for sei-52 came with the idea of creating a Zodiac plataform where people could be conected by matching star signs.
-For my point of  view the crud app is perfect to make the profiles to match by using the db seed and models for assossiations.
-I made this app as per my knowledge inf the astrology industry, it worths a lot of money, so I might get lucky with some rich people reaching me  out to buy my app and my hidden ideas that I havent applied to my app yet, just to protect my business.
-
-
-# Features
-
--cards with very honest horoscop, written by my spiritual self;
--can create profile;
--includes a profile picture => hotlinking atm <=
--email;
--password;
--star sign , and element that comes with a star sign;
-
-# tools to be implemented 
-
--matching profiles;
--link profiles to the home page cards;
--implement cloudimary;
--implement private chat;
-
-# bugs to fix
-
--sign out page os showing an error sometimes... very strange as it doesn't show all times, only for new accounts. 
+![Astro website](app/assets/images/Screen%20Shot%202022-06-20%20at%2011.28.06%20am.png)
 
 
 
