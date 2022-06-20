@@ -15,7 +15,15 @@ Therefore, I followed the instructions of my advisors, who guided me to create a
 - Ruby on Rails
 - PostgreSQL
 - Bootstrap
- 
+
+
+Design
+====================
+For the Design of this Project, i went deeper in learning about Css, which took me across the Css libraries. 
+I've chosen Bootstrap, which gave me a hand with styling the login FORMS, anf the cards displayed in the Home page.
+
+I'm very proud to say that, the website's color chart was entirely chosen by me, which brought lightness and identity to my App.
+
 =====================
 
 ## Basic fetures 
@@ -23,14 +31,18 @@ Therefore, I followed the instructions of my advisors, who guided me to create a
 - Create profile
 - Login
 - Logout
-- Access to your Horoscope Card baes on your Star Sign
+- Access to your Horoscope Card based on your Star Sign
 
 ======================
 
 ![Astro website](app/assets/images/Screen%20Shot%202022-06-20%20at%2011.28.06%20am.png)
 
 
+## Next step
 
+- Add Date table's to the models
+
+- Add matching fetures to the controllers
 
 
 
